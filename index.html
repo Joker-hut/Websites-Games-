@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="mainDiv">
+    <h1>To Do List - <span id="bydave">By David</span></h1>
+    <input type="text" placeholder="Task Name" id="input"> 
+    <button onclick="addTask(); updateSummary();">Add</button>
+
+<div id="listsContainer">
+    <div id="list">
+        <h2 class="headings">To do:</h2>
+        <ol id="orderedList"></ol>
+    </div>
+
+    <div id="separator"></div>
+
+    <div id="doneList">
+        <h2 class="headings">Done:</h2>
+        <ol id="OrderedListDone"></ol>
+        </div>
+    </div>
+    <h2 class="headings">Summary:</h2>
+    <div id="summaryDiv">
+        <p>Total Items: <span id="totalItems"> </span></p>
+        <p>Left to do: <span id="leftToDo"> </span></p>
+        <p>Done: <span id="done"> </span></p>
+        <p>Percentage Complete: <span id="percentageComplete"> </span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
